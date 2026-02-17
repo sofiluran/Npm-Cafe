@@ -1,0 +1,12 @@
+<% if(staffList) { %>
+  <% staffList.forEach(show => { %>
+
+    <div class="container">
+      <h4 class="item-name">Name: <%=show.name %></h4>
+      <div class="price">Role: <%= show.role %></div>
+      <p class="item-description">Favourite Carb: <%= show.favorite %> </p>
+    </div>
+
+ <% }) %>
+
+<% } %> 

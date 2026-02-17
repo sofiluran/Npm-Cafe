@@ -1,0 +1,29 @@
+<%-include('../partials/head.ejs')%>
+
+<body class="<%= className %>">
+  
+  <%-include('../partials/header.ejs')  %>
+
+      <div class="links">
+        <a href="/menu/lunch" class="link">lunch</a>
+        <a href="/menu/cakes" class="link">cakes</a>
+      </div>
+
+  <main class="main">
+    <p><%= description %></p> 
+
+    <% if (locals.pageType) { %>
+      <% if (pageType === "cakes") { %> 
+        <%-include('../partials/cakes')  %>
+      <% } else if (pageType === "lunch") { %>
+        <% if (locals.lunchList) { %>
+          <%-include('../partials/lunch') %>
+        <% } %>
+      <% } %>
+    <% } %>
+  </main>
+
+  <%-include('../partials/footer.ejs')  %>
+
+</body>
+</html>
