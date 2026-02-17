@@ -5,7 +5,6 @@ import { alcohol, coffee } from "../data/data.js";
 const drinksRouter = express.Router();
 const __dirname = path.resolve();
 
-
 drinksRouter.get('/', (req, res) => {
   res.render(
     path.join(__dirname, "views/pages/drinks"),
@@ -19,8 +18,6 @@ drinksRouter.get('/', (req, res) => {
     }
 )
 })
-
-// underrouters 
 
 drinksRouter.get('/coffee', (req, res) => {
   res.render(
@@ -51,7 +48,5 @@ drinksRouter.get('/alcohol', (req, res) => {
     }
 )
 })
-
-
 
 export default drinksRouter

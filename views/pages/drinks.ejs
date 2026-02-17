@@ -1,17 +1,13 @@
 <%-include('../partials/head.ejs')%>
 
 <body class="<%= className %>">
-  
   <%-include('../partials/header.ejs')  %>
-
   <div class="links">
-    <a href="/drinks/coffee" class="link">coffee</a>
-    <a href="/drinks/alcohol" class="link">alcohol</a>
+    <a href="/drinks/coffee" class="link">COFFEE</a>
+    <a href="/drinks/alcohol" class="link">ALCOHOL</a>
   </div>
-      
   <main class="main">
     <p><%= description %></p> 
-
     <% if (locals.pageType) { %>
       <% if (pageType === "coffee") { %> 
         <%-include('../partials/coffee')  %>
@@ -22,8 +18,6 @@
       <% } %>
     <% } %>
   </main>
-
   <%-include('../partials/footer.ejs')  %>
-
 </body>
 </html>

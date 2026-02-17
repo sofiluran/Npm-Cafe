@@ -1,12 +1,9 @@
 <% if(coffeeList) { %>
   <% coffeeList.forEach(show => { %>
-
     <div class="container">
       <h4 class="item-name"><%= show.name %></h4>
       <div class="price"><%= show.price %></div>
       <p class="item-description">Description: <%= show.description %> </p>
     </div>
-
  <% }) %>
-
 <% } %> 

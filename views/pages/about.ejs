@@ -1,27 +1,18 @@
 <%-include('../partials/head.ejs')%>
 
 <body>
-  
   <%-include('../partials/header.ejs')  %>
-
-    <div class="links">
-   <a href="/about/staff" class="link">STAFF</a>
+  <div class="links">
+    <a href="/about/staff" class="link">STAFF</a>
   </div>
-
-
   <main class="main">
     <p><%= description %></p> 
-
     <% if (locals.pageType) { %>
       <% if (pageType === "staff") { %> 
         <%-include('../partials/staff')  %>
-
-        <% } %>
       <% } %>
+    <% } %>
   </main>
-
   <%-include('../partials/footer.ejs')  %>
-
-
 </body>
 </html>

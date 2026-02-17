@@ -5,7 +5,6 @@ import menuRouter from "./routes/menu.js";
 import aboutRouter from "./routes/about.js";
 import * as path from "path"
 
-
 const app = express()
 const port = process.env.PORT;
 
@@ -13,7 +12,6 @@ const __dirname = path.resolve()
 
 app.set('view engine', 'ejs')
 app.use(express.static("public"))
-
 
 app.get('/', (req, res) => {
   res.render(

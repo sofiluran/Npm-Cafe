@@ -5,7 +5,6 @@ import { staff } from "../data/data.js";
 const aboutRouter = express.Router()
 const __dirname = path.resolve();
 
-
 aboutRouter.get('/', (req, res) => {
   res.render(
     path.join(__dirname, 'views/pages/about'),
@@ -18,9 +17,6 @@ aboutRouter.get('/', (req, res) => {
       pageType: "about"
     })
 })
-
-
-// underrouters 
 
 aboutRouter.get('/staff', (req, res) => {
   res.render(
