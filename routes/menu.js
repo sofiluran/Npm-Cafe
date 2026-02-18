@@ -14,7 +14,8 @@ menuRouter.get('/', (req, res) => {
       subTitle: "Hangry?",
       description: "Explore our carefully curated menu, where every dish and drink tells a story of quality and craft. From our kitchen’s seasonal lunch specials to our bakery’s daily treats and our barista’s specialty brews, we offer a diverse selection to satisfy every craving. Select a category below to discover your next favorite meal.", 
       className: "menu",
-      documentTitle: "Menu"
+      documentTitle: "Menu",
+      image: "menu.png"
     }
 )
 })

@@ -6,6 +6,9 @@
     <a href="/menu/cakes" class="link">cakes</a>
   </div>
   <main class="main">
+    <% if (locals.image) { %>
+      <img src="/images/<%= image %>">
+    <% } %>
     <p><%= description %></p> 
     <% if (locals.pageType) { %>
       <% if (pageType === "cakes") { %> 
